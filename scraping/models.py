@@ -43,7 +43,9 @@ class Vacancy(models.Model):
     url = models.URLField(unique=True)
     title = models.CharField(max_length=250, verbose_name='Заголовок вакансии')
     company = models.CharField(max_length=250, verbose_name='Компания')
-    description = models.TextField(verbose_name='Описание вакансии')
+    subway = models.CharField(max_length=250, verbose_name='Метро')
+    description_responsibility = models.TextField(verbose_name='Описание обязанностей вакансии')
+    description_requirement = models.TextField(verbose_name='Описание требований вакансии')
     timestamp = models.DateField(auto_now_add=True)  # день, когда внесена вакансия
     city = models.ForeignKey('City', on_delete=models.CASCADE, verbose_name='Город')  # много вакансий к 1 городу
     language = models.ForeignKey('Language', on_delete=models.CASCADE,
@@ -56,3 +58,7 @@ class Vacancy(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Error(models.Model):
+    pass

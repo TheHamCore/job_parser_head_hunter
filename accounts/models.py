@@ -1,5 +1,4 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
-from django.contrib.auth.models import UserManager
 from django.db import models
 
 
@@ -35,7 +34,6 @@ class MyUserManager(BaseUserManager):
         return user
 
 
-
 # документация - https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#a-full-example
 class MyUser(AbstractBaseUser):
     email = models.EmailField(
@@ -50,7 +48,7 @@ class MyUser(AbstractBaseUser):
     language = models.ForeignKey('scraping.Language', on_delete=models.SET_NULL,
                                  null=True, blank=True)
     send_email = models.BooleanField(default=True)
-    
+
     objects = MyUserManager()
 
     USERNAME_FIELD = 'email'
