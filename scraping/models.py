@@ -1,6 +1,13 @@
+import jsonfield
 from django.db import models
 
 from scraping.utils import from_cyrillic_to_eng
+
+
+def defaults_url():  # для пар
+    return {  # при создании новой записи будем видеть данный набор
+        'head_hunter': '',
+    }
 
 
 class City(models.Model):
@@ -61,4 +68,16 @@ class Vacancy(models.Model):
 
 
 class Error(models.Model):
-    pass
+    data = jsonfield.JSONField()
+    timestamp = models.DateField(auto_now_add=True)  # подключил библиотеку для типа поля JSON для SQLite3
+
+
+class Url(models.Model):
+    city = models.ForeignKey('City', on_delete=models.CASCADE, verbose_name='Город')
+    language = models.ForeignKey('Language', on_delete=models.CASCADE,
+                                 verbose_name='Язык программирования')
+    url_data = jsonfield.JSONField(default=defaults_url)  # будем видеть набор.
+
+    class Meta:
+        unique_together = ('city', 'language')  # unique_together указываем, что эти два параметра вместе уникальны
+        # в БД всегда уникальные параметры
