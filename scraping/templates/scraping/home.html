@@ -1,33 +1,27 @@
 {% extends "base.html" %}
-    {% block title %}Home{% endblock %}
+    {% block title %} home {% endblock %}
     {% block content %}
         <div class="row">
-            <div class="col-md-3 mx-auto">
-                <form method="GET" action="">
-                 <div class="form-group">
-                     {{form.as_p}}
-                 </div>
-                 <button type="submit" class="btn btn-primary">Найти</button>
+            <div class="col">
+                <h2 class="text-center my-4">Сервис по сбору и рассылки ваканский</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="container">
+                    <h4 class="my-3">Для просмотра доступных ваканский заполните форму по одному из полей (либо город, либо язык программирования)</h4>
+                </div>
+                <form method="GET" action="{% url 'list' %}">
+    <!--            {% csrf_token %}-->
+                    <div class="form-group">{{ form.as_p }}</div>
+                    <button type="submit" class="btn btn-primary">Найти</button>
                 </form>
             </div>
         </div>
-        {% for obj in object_list %}
-            <div class="card my-4">
-              <h5 class="card-header"><a href="{{ obj.url }}">{{obj.title}}</a></h5>
-              <div class="card-body">
-                <h4>Компания: {{obj.company}}</h4>
-                <p class="card-text">{{obj.description}}</p>
-                <p><strong>Город:</strong> {{obj.city.name}}</p>
-                <p><strong>Язык программирования:</strong> {{obj.language.name}}</p>
-                <p><strong>Дата размещения вакансии:</strong> {{obj.timestamp|date:"d-m-Y"}}</p>
-              </div>
-            </div>
-
-        {% empty %}
-            <div class="col-md-5 mx-auto">
-                <p>К сожалению, по Вашему запросу ничего не найдено</p>
-            </div>
-                {% endfor %}
 
 
-    {% endblock content %}
+    {% endblock %}
+
+
+

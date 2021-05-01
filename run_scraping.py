@@ -1,6 +1,7 @@
 import asyncio
 import os
 import sys
+import time
 
 from django.contrib.auth import get_user_model
 from django.db import DatabaseError
@@ -24,10 +25,11 @@ parsers = (
     (head_hunter, 'head_hunter'),
 )
 
-
 # москва# https://hh.ru/search/vacancy?clusters=true&area=1&enable_snippets=true&salary=&st=searchVacancy&text=Python+junior
 # спб# https://spb.hh.ru/search/vacancy?clusters=true&area=2&enable_snippets=true&salary=&st'
 #                   '=searchVacancy&text=Python+junior+
+
+jobs, errors = [], []
 
 
 def get_settings():  # получаем данные из user`a
@@ -58,31 +60,38 @@ def get_urls(settings):  # список с набором url, для перед
     return urls
 
 
+async def main(value):
+    func, url, language, city = value  # получим значения
+    job, err = await loop.run_in_executor(None, func, url, language, city)  # запускаем на выполнение
+    errors.extend(err)
+    jobs.extend(job)
+
 setting = get_settings()
 url_list = get_urls(setting)
 
 # city = City.objects.filter(slug='moskva').first()  # first() => перевели из QuerySet`a в Instanse
 # language = Language.objects.filter(slug='python').first()
 
-jobs, errors = [], []
-import time
 
 start = time.time()
 loop = asyncio.get_event_loop()  # запуск задач
 tmp_tasks = [  # cоздали список с полным набором всех необходимых выполнений функций
-    (func, data.get(key), data['language'], data['city'])
+    (func, data['url_data'][key], data['language'], data['city'])
     for data in url_list
     for func, key in parsers
 ]
 tasks = asyncio.wait([loop.create_task(main(f)) for f in tmp_tasks])  # запуск на выполнение. Создаем task на запуск
 
-for data in url_list:
-    for func, key in parsers:
-        url = data['url_data'][key]  # получаем url из модели Url
-        j, e = func(url, language=data['language'],
-                    city=data['city'])  # раскладываем в разные переменные для последующего добавления в списки
-        jobs += j
-        errors += e
+# for data in url_list: # теперь логика в async
+#     for func, key in parsers:
+#         url = data['url_data'][key]  # получаем url из модели Url
+#         j, e = func(url, language=data['language'],
+#                     city=data['city'])  # раскладываем в разные переменные для последующего добавления в списки
+#         jobs += j
+#         errors += e
+
+loop.run_until_complete(tasks)
+loop.close()
 
 print(jobs)
 print(time.time() - start)
