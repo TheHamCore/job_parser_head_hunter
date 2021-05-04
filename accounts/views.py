@@ -1,7 +1,11 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout, get_user_model
+from accounts.forms import UserLoginForm, UserRegistrationForm, UserUpdateForm, User, ContactForm
+from scraping.models import Error
+import datetime as dt
 
-from accounts.forms import UserLoginForm
+user = get_user_model()  # получаем запись из модели пользователя
 
 
 def login_view(request):
@@ -19,3 +23,80 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('home')
+
+
+def register_view(request):
+    form = UserRegistrationForm(request.POST or None)
+    if form.is_valid():
+        new_user = form.save(
+            commit=False)  # commit=False => записывем пользователя в системе. Данные из формы записываются в модель
+        new_user.set_password(form.cleaned_data['password'])  # шифруем пароль => устанавливает в виде нового пароля
+        new_user.save()
+        messages.success(request, 'Пользователь добавлен в систему.')
+        return render(request, 'accounts/register_done.html', {'new_user': new_user})
+    return render(request, 'accounts/register.html', {'form': form})
+
+
+def update_view(request):  # пользователь должен быть зарегистрирован в системе и залогирован (проверка на регистрацию)
+    contact_form = ContactForm()
+    if request.user.is_authenticated:  # вытягиваем пользователя из системы и проверяем зарегистрировался он в системе
+        user = request.user  # передаем в переменную user
+        if request.method == 'POST':
+            form = UserUpdateForm(request.POST)  # получаем данные из формы и подгружаем в базу
+            if form.is_valid():  # изменяем значения в user. Данные из формы прокинули к пользователю, чтобы их там
+                # сохранить
+                data = form.cleaned_data
+                user.city = data['city']  # привязываем к данным в модели
+                user.language = data['language']
+                user.send_email = data['send_email']
+                user.save()  # сохраняем пользователя
+                messages.success(request, 'Данные сохранены.')
+                return redirect('accounts:update')
+
+        form = UserUpdateForm(  # если метод не POST
+            initial={'city': user.city,
+                     'language': user.language,
+                     'send_email': user.send_email
+                     })  # для начальных значений передаем то, что записано у пользователя в модели через user`a
+        # в форме в настройках будет указано то, что выбрал пользователь изначально
+        return render(request, 'accounts/update.html', {'form': form,
+                                                        'contact_form': contact_form})
+    else:
+        return redirect('accounts:login')  # если пользователь не вошел на сайт/не зарегистрировался
+
+
+def delete_view(request):
+    if request.user.is_authenticated:  # вытягиваем пользователя из системы
+        user = request.user  # получаем user, который зарегистрировался
+        if request.method == 'POST':
+            qs = User.objects.get(
+                pk=user.pk)  # удаляем user через получение записи из базы данных(получаем модель user)
+            qs.delete()
+            messages.error(request, 'Пользователь удален')
+    return redirect('home')
+
+
+def contact(request):
+    if request.method == 'POST':
+        contact_form = ContactForm(request.POST or None)
+        if contact_form.is_valid():
+            data = contact_form.cleaned_data
+            city = data.get('city')
+            language = data.get('language')
+            email = data.get('email')
+            qs = Error.objects.filter(timestamp=dt.date.today())  # проверяем наличие записей в таблице
+            if qs.exists():
+                err = qs.first()
+                data = err.data.get('user_data', [])
+                data.append({'city': city, 'language': language, 'email': email})
+                err.data['user_data'] = data
+                err.save()
+            else:
+                data = [({'city': city, 'language': language, 'email': email})]
+                Error(data=f"user_data: {data} ").save()
+            messages.success(request, 'Данные отправлены администрации.')
+            return redirect('accounts:update')
+        else:
+            return redirect('accounts:update')
+    else:
+        return redirect('accounts:login')

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+    {% block title %} Register{% endblock %}
+
+    {% block content %}
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="container">
+                    <h4 class="my-3">Настройки</h4>
+                </div>
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <div class="form-group">{{ form.as_p }}</div>
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                </form>
+                <form method="POST" action="{% url 'accounts:delete' %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger my-3">Удалить</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="row my-5">
+            <div class="col-md-8 mx-auto">
+                <p class="my-3">Если Вы не нашли подходящий набор: город-язык программирования, Вы можете заполнить форму ниже с Вашими пожаланиями.
+                    После того, как необходимые данные будут добавлены, Вы получите письмо на указанный Вами email адрес
+                </p>
+                <p>
+                    <button class="btn btn-success"
+                            type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsed" aria-expanded="false"
+                            aria-controls="collapseExample"
+                    >
+                        Показать форму
+                    </button>
+                </p>
+                <div class="collapse" id="collapsed">
+                    <div class="card card-body">
+                        <form method="POST" action="{% url 'accounts:contact' %}">
+                            {% csrf_token %}
+                            <div class="form-group">{{ contact_form.as_p }}</div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endblock %}
+
+
+
+
+

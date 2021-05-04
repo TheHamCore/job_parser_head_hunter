@@ -2,6 +2,7 @@ import asyncio
 import os
 import sys
 import time
+import datetime as dt
 
 from django.contrib.auth import get_user_model
 from django.db import DatabaseError
@@ -49,14 +50,14 @@ def get_urls(settings):  # список с набором url, для перед
     }
     urls = []
     for pair in settings:  # {(3,1), (2,1)}
-        tmp = {
-            'city': pair[0],
-            'language': pair[1],
-            'url_data': url_dict[pair]
-        }
+        if pair in url_dict:  # проверка на существование ключа
+            tmp = {
+                'city': pair[0],
+                'language': pair[1],
+                'url_data': url_dict[pair]
+            }
 
         urls.append(tmp)  # получим значения, которые необходимы
-    print(urls)
     return urls
 
 
@@ -93,7 +94,6 @@ tasks = asyncio.wait([loop.create_task(main(f)) for f in tmp_tasks])  # запу
 loop.run_until_complete(tasks)
 loop.close()
 
-print(jobs)
 print(time.time() - start)
 for job in jobs:
     v = Vacancy(**job, )
@@ -102,7 +102,13 @@ for job in jobs:
     except DatabaseError:  # url должен быть уникальным. Используем try, except
         pass
 if errors:  # если ошибки существуют
-    er = Error(data=errors).save()  # в модель добавляем значение поля data
+    qs = Error.objects.filter(timestamp=dt.date.today())
+    if qs.exists():
+        err = qs.first()
+        err.data.update({'errors': errors})
+        err.save()
+    else:
+        er = Error(data=f'errors: {errors}').save()  # в модель добавляем значение поля data
 
 h = open('work.txt', 'w', encoding='utf-8')
 h.write(str(jobs))  # получаем контент от сервера. Преобразуя байты в строки

@@ -14,3 +14,5 @@ class FindForm(forms.Form):
         widget=forms.Select(attrs={"class": "form-control"}),
         label="Язык программирования"
     )
+
+

@@ -71,6 +71,9 @@ class Error(models.Model):
     data = jsonfield.JSONField()
     timestamp = models.DateField(auto_now_add=True)  # подключил библиотеку для типа поля JSON для SQLite3
 
+    def __str__(self):
+        return f'Дата ошибки: {str(self.timestamp)}'
+
 
 class Url(models.Model):
     city = models.ForeignKey('City', on_delete=models.CASCADE, verbose_name='Город')
@@ -81,3 +84,6 @@ class Url(models.Model):
     class Meta:
         unique_together = ('city', 'language')  # unique_together указываем, что эти два параметра вместе уникальны
         # в БД всегда уникальные параметры
+
+    def __str__(self):
+        return f'{self.city} - {self.language}'

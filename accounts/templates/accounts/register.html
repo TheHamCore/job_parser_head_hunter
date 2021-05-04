@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+    {% block title %} Register{% endblock %}
+
+    {% block content %}
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="container">
+                    <h4 class="my-3">Регистрация нового пользователя</h4>
+                </div>
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <div class="form-group">{{ form.as_p }}</div>
+                    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+
+
+    {% endblock %}
+
+
+
