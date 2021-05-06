@@ -1,3 +1,4 @@
+# -*- coding: cp1251 -*-
 [
 {
   "model": "auth.permission",
@@ -183,7 +184,7 @@
   "model": "auth.permission",
   "pk": 21,
   "fields": {
-    "name": "Can add Название населенного пункта",
+    "name": "Can add пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 6,
     "codename": "add_city"
   }
@@ -192,7 +193,7 @@
   "model": "auth.permission",
   "pk": 22,
   "fields": {
-    "name": "Can change Название населенного пункта",
+    "name": "Can change пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 6,
     "codename": "change_city"
   }
@@ -201,7 +202,7 @@
   "model": "auth.permission",
   "pk": 23,
   "fields": {
-    "name": "Can delete Название населенного пункта",
+    "name": "Can delete пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 6,
     "codename": "delete_city"
   }
@@ -210,7 +211,7 @@
   "model": "auth.permission",
   "pk": 24,
   "fields": {
-    "name": "Can view Название населенного пункта",
+    "name": "Can view пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 6,
     "codename": "view_city"
   }
@@ -255,7 +256,7 @@
   "model": "auth.permission",
   "pk": 29,
   "fields": {
-    "name": "Can add Язык программирования",
+    "name": "Can add пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 8,
     "codename": "add_language"
   }
@@ -264,7 +265,7 @@
   "model": "auth.permission",
   "pk": 30,
   "fields": {
-    "name": "Can change Язык программирования",
+    "name": "Can change пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 8,
     "codename": "change_language"
   }
@@ -273,7 +274,7 @@
   "model": "auth.permission",
   "pk": 31,
   "fields": {
-    "name": "Can delete Язык программирования",
+    "name": "Can delete пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 8,
     "codename": "delete_language"
   }
@@ -282,7 +283,7 @@
   "model": "auth.permission",
   "pk": 32,
   "fields": {
-    "name": "Can view Язык программирования",
+    "name": "Can view пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 8,
     "codename": "view_language"
   }
@@ -291,7 +292,7 @@
   "model": "auth.permission",
   "pk": 33,
   "fields": {
-    "name": "Can add Вакансию",
+    "name": "Can add пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 9,
     "codename": "add_vacancy"
   }
@@ -300,7 +301,7 @@
   "model": "auth.permission",
   "pk": 34,
   "fields": {
-    "name": "Can change Вакансию",
+    "name": "Can change пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 9,
     "codename": "change_vacancy"
   }
@@ -309,7 +310,7 @@
   "model": "auth.permission",
   "pk": 35,
   "fields": {
-    "name": "Can delete Вакансию",
+    "name": "Can delete пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 9,
     "codename": "delete_vacancy"
   }
@@ -318,7 +319,7 @@
   "model": "auth.permission",
   "pk": 36,
   "fields": {
-    "name": "Can view Вакансию",
+    "name": "Can view пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 9,
     "codename": "view_vacancy"
   }
@@ -363,7 +364,7 @@
   "model": "auth.permission",
   "pk": 41,
   "fields": {
-    "name": "Can add Пользователя",
+    "name": "Can add пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 11,
     "codename": "add_myuser"
   }
@@ -372,7 +373,7 @@
   "model": "auth.permission",
   "pk": 42,
   "fields": {
-    "name": "Can change Пользователя",
+    "name": "Can change пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 11,
     "codename": "change_myuser"
   }
@@ -381,7 +382,7 @@
   "model": "auth.permission",
   "pk": 43,
   "fields": {
-    "name": "Can delete Пользователя",
+    "name": "Can delete пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 11,
     "codename": "delete_myuser"
   }
@@ -390,7 +391,7 @@
   "model": "auth.permission",
   "pk": 44,
   "fields": {
-    "name": "Can view Пользователя",
+    "name": "Can view пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "content_type": 11,
     "codename": "view_myuser"
   }
