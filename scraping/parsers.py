@@ -65,9 +65,9 @@ def head_hunter(url, language=None, city=None):
 # h.write(str(resp.text))  # записываем байты в строки
 # h.close()
 
-# if __name__ == '__main__':
-#     url = 'https://spb.hh.ru/search/vacancy?area=2&fromSearchLine=true&st=searchVacancy&text=python'
-#     jobs, errors = head_hunter(url)
-#     h = codecs.open('../work.txt', 'w', encoding='utf-8')  # сервер присылает ответ
-#     h.write(str(jobs))  # записываем байты в строки
-#     h.close()
+if __name__ == '__main__':
+    url = 'https://spb.hh.ru/search/vacancy?area=2&fromSearchLine=true&st=searchVacancy&text=python'
+    jobs, errors = head_hunter(url)
+    h = codecs.open('../work.txt', 'w', encoding='utf-8')  # сервер присылает ответ
+    h.write(str(jobs))  # записываем байты в строки
+    h.close()
