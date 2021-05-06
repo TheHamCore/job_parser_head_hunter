@@ -404,13 +404,5 @@
     "city": 1,
     "language": 1
   }
-},
-{
-  "model": "scraping.vacancy",
-  "pk": 27,
-  "fields": {
-    "url": "https://spb.hh.ru/vacancy/44103110?query=python",
-    "title": "Python �����������",
-    "company": "�� ������",
-    "subway": "",
-    "description_responsibility": 
+}
+]
