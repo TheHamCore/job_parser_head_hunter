@@ -11,7 +11,7 @@
   "model": "scraping.language",
   "pk": 1,
   "fields": {
-    "name": "python",
+    "name": "Python",
     "slug": "python"
   }
 },
@@ -19,12 +19,12 @@
   "model": "scraping.vacancy",
   "pk": 1,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/40229865?query=python",
-    "title": "Младший аналитик данных (Junior data analyst)",
-    "company": "ООО Финансово-правовой альянс",
+    "url": "https://spb.hh.ru/vacancy/44394986?query=python",
+    "title": "Junior Python разработчик",
+    "company": "ООО Виста",
     "subway": "",
-    "description": "Работа с множеством источников данных: сбор, очищение, изучение, анализ данных в корпоративной информационной среде. Визуализация полученных результатов, создание схем, диаграмм...",
-    "timestamp": "2021-05-06",
+    "description": "Обязательные требования: * Опыт коммерческой разработки от 1 года. * Владение <highlighttext>Python</highlighttext> 2/3. * Владение (My)SQL, конкретно: * * Иметь опыт в использовании...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -33,12 +33,12 @@
   "model": "scraping.vacancy",
   "pk": 2,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/41827452?query=python",
-    "title": "Аналитик данных (data analyst)",
-    "company": "ООО Финансово-правовой альянс",
+    "url": "https://spb.hh.ru/vacancy/43221558?query=python",
+    "title": "Python Developer (Neon Team)",
+    "company": "Semrush",
     "subway": "",
-    "description": "Работа со множеством источников данных: сбор, очищение, изучение, анализ данных в корпоративной информационной среде. Визуализация полученных результатов, создание схем, диаграмм...",
-    "timestamp": "2021-05-06",
+    "description": "Мы ждем от тебя: Опыт коммерческой разработки на <highlighttext>Python</highlighttext> от 2+ лет. Опыт разработки любого рода API. ",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -47,12 +47,12 @@
   "model": "scraping.vacancy",
   "pk": 3,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44395410?query=python",
-    "title": "Junior Data Engineer",
-    "company": " Cindicator",
+    "url": "https://spb.hh.ru/vacancy/43850827?query=python",
+    "title": "Программист Python",
+    "company": "ООО Телепорт",
     "subway": "",
-    "description": "Общаться с Quantitative Research разбираться, что должно происходить в реальной торговле, разработанных ими стратегий. Следить за текущими метриками/отчетами и...",
-    "timestamp": "2021-05-06",
+    "description": "Опыт программирования на <highlighttext>Python</highlighttext> 3 и представление о микросервисной архитектуре. Стек Django от версии 1.8, RabbitMQ, DRF, SQLAlchemy, Flask. ",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -61,12 +61,12 @@
   "model": "scraping.vacancy",
   "pk": 4,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44394986?query=python",
-    "title": "Junior Python разработчик",
-    "company": "ООО Виста",
+    "url": "https://spb.hh.ru/vacancy/44099330?query=python",
+    "title": "Senior Python Backend Engineer",
+    "company": "Adjust Inc",
     "subway": "",
-    "description": "Написание и поддержка интеграций (python2/3 + REST/SOAP + MySQL). * Разработка новых продуктов (python3 + Flask/Django...",
-    "timestamp": "2021-05-06",
+    "description": "Proficiency in <highlighttext>Python</highlighttext>. Knowledge of Django or FastAPI. Experience working with PostgreSQL, Redis and task queues. Understanding of HTTP. ",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -75,12 +75,12 @@
   "model": "scraping.vacancy",
   "pk": 5,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/43729892?query=python",
-    "title": "Python разработчик (Middle+/Senior)",
-    "company": "ООО Вайт Код",
+    "url": "https://spb.hh.ru/vacancy/44010861?query=python",
+    "title": "Разработчик Python",
+    "company": "FinSTC Software LLC",
     "subway": "",
-    "description": "Разработка архитектуры, поддержка, развитие и оптимизация проектов. Проектирование и развитие архитектуры баз данных. Разработка новой функциональности и улучшение имеющейся. ",
-    "timestamp": "2021-05-06",
+    "description": "Базовые: <highlighttext>Python</highlighttext>. Английский (средний, профессиональная терминология). Желательный опыт работы от 1 года до 3 лет. Будет плюсом: Azure. Java. ",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -89,12 +89,12 @@
   "model": "scraping.vacancy",
   "pk": 6,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/43850827?query=python",
-    "title": "Программист Python",
-    "company": "ООО Телепорт",
+    "url": "https://spb.hh.ru/vacancy/43838111?query=python",
+    "title": "Ведущий разработчик Python (Team Lead)",
+    "company": "ООО Телепорт",
     "subway": "",
-    "description": "Доработка и совершенствование текущего ПО. API интеграция с интернет-магазинами. Реализация API. Решение оперативных задач. Техническое сопровождение ПО.",
-    "timestamp": "2021-05-06",
+    "description": "Опыт от 5 лет в разработке Agile-проектов с микро-сервисной архитектурой и RESTful API. Технологический стек: <highlighttext>Python</highlighttext> 3.6...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -103,12 +103,12 @@
   "model": "scraping.vacancy",
   "pk": 7,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/43221558?query=python",
-    "title": "Python Developer (Neon Team)",
-    "company": " Semrush",
+    "url": "https://spb.hh.ru/vacancy/43932938?query=python",
+    "title": "Python-разработчик",
+    "company": "Новакид РУС",
     "subway": "",
-    "description": "Проектирование и написание новых сервисов. Поддержка и развитие инфраструктуры для работы сервисов, которые делает наша команда. Участие в проектировании, анализе...",
-    "timestamp": "2021-05-06",
+    "description": "Опыт удаленной работы. Опыт работы с нашим стеком (см выше), любыми <highlighttext>Python</highlighttext> фреймворками (Bottle, Django, Flask, Pyramid и т.п...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -117,12 +117,12 @@
   "model": "scraping.vacancy",
   "pk": 8,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44099330?query=python",
-    "title": "Senior Python Backend Engineer",
-    "company": " Adjust Inc",
+    "url": "https://spb.hh.ru/vacancy/44217193?query=python",
+    "title": "Разработчик Python (Flask/Django) со знанием фронта (Vue)",
+    "company": "Группа компаний «SWEB GROUP»",
     "subway": "",
-    "description": "Develop and maintain pipelines responsible for ingesting data from a variety of sources. Integrate with partner APIs (e.g. ",
-    "timestamp": "2021-05-06",
+    "description": "Хорошие навыки программирования на <highlighttext>Python</highlighttext>. Опыт работы с Flask / другими RESTful фреймворками. Опыт работы с базами данных (MySQL, PgSQL и...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -131,12 +131,12 @@
   "model": "scraping.vacancy",
   "pk": 9,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44240210?query=python",
-    "title": "Data Scientist",
-    "company": " Нейронов Антон",
+    "url": "https://spb.hh.ru/vacancy/44404394?query=python",
+    "title": "Full Stack Python Developer",
+    "company": "HIVE",
     "subway": "",
-    "description": "Развитие переиспользуемого pipeline работы с данными. Творческий анализ гипотез (то есть, не по формальному ТЗ, а используя весь свой мозг...",
-    "timestamp": "2021-05-06",
+    "description": "ПРО ПРОЕКТ. ТЕХНОЛОГИИ. <highlighttext>Python</highlighttext>, Django, React, Nginx, MySQL, PostgreSQL. Мы ожидаем от вас опыт с <highlighttext>Python</highlighttext> и хорошее знание Django...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -145,12 +145,12 @@
   "model": "scraping.vacancy",
   "pk": 10,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44010861?query=python",
-    "title": "Разработчик Python",
-    "company": " FinSTC Software LLC",
+    "url": "https://spb.hh.ru/vacancy/43931534?query=python",
+    "title": "Python/Django Web Developer (Remote)",
+    "company": "Soshace",
     "subway": "",
-    "description": "В рамках работы вы будете выполнять следующие задачи: Написание кода на Python для автоматизации банковских рабочих процессов в имеющейся системе. ",
-    "timestamp": "2021-05-06",
+    "description": "3+ years of professional software development experience with JavaScript. 1+ year of professional experience with React or Angular...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -159,12 +159,12 @@
   "model": "scraping.vacancy",
   "pk": 11,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44217193?query=python",
-    "title": "Разработчик Python (Flask/Django) со знанием фронта (Vue)",
-    "company": " Группа компаний «SWEB GROUP»",
+    "url": "https://spb.hh.ru/vacancy/43394109?query=python",
+    "title": "Senior QA Automation Engineer (Python)",
+    "company": "Scalable Solutions",
     "subway": "",
-    "description": "Разработка сложного web-сервиса и системы автоматизации в крупной компании, в качестве back-end разработчика.",
-    "timestamp": "2021-05-06",
+    "description": "Будет плюсом: Опыт автоматизированного тестирования больших распределенных систем. Опыт нагрузочного тестирования. Знание <highlighttext>Python</highlighttext>/Pytest. Опыт в финтехе. Людям, увлеченным финтехом...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -173,12 +173,12 @@
   "model": "scraping.vacancy",
   "pk": 12,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/43838111?query=python",
-    "title": "Ведущий разработчик Python (Team Lead)",
-    "company": "ООО Телепорт",
+    "url": "https://spb.hh.ru/vacancy/41876803?query=python",
+    "title": "Python developer",
+    "company": "B2Broker Санкт-Петербург",
     "subway": "",
-    "description": "Участие в разработке микросервисов и ядра системы. Принятие архитектурных решений. Нарезка крупных задач на остальных разработчиков. Взаимодействие с DevOps.",
-    "timestamp": "2021-05-06",
+    "description": "Имеет опыт коммерческой разработки на <highlighttext>Python</highlighttext> 3 от 6 лет. Знает и умеет использовать: итераторы, генераторы, потоки. Отлично владеет знаниями...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -187,12 +187,12 @@
   "model": "scraping.vacancy",
   "pk": 13,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/43931534?query=python",
-    "title": "Python/Django Web Developer",
-    "company": " Soshace",
+    "url": "https://spb.hh.ru/vacancy/44270525?query=python",
+    "title": "Программист Python/Django Fullstack",
+    "company": "ООО РестоМаркет",
     "subway": "",
-    "description": "Guarantee of regular payments and reliable clients. We search for clients and do all the paperwork. After the first project...",
-    "timestamp": "2021-05-06",
+    "description": "Знание принципов ООП и основных паттернов проектирования. Понимание асинхронной работы в <highlighttext>Python</highlighttext>. Опыт работы с REST API, понимание стандарта OpenAPI...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -201,12 +201,12 @@
   "model": "scraping.vacancy",
   "pk": 14,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/43932938?query=python",
-    "title": "Python-разработчик",
-    "company": " Новакид РУС",
+    "url": "https://spb.hh.ru/vacancy/43360839?query=python",
+    "title": "Senior Data Engineer (AWS/Python)",
+    "company": "ООО ОнТаргет ЛАБС",
     "subway": "",
-    "description": "Работа со стеком технологий: Python 3.6, Pyramid, PostgreSQL, SQLAlchemy, Celery, Rabbitmq, Redis, Buildout, Rest API, немного JS (тех админка...",
-    "timestamp": "2021-05-06",
+    "description": "Higher technical education. 3+ years of IT experience. AWS Glue. AWS CDK. AWS Redshift. <highlighttext>Python</highlighttext>. PySpark. PyTest.",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -215,12 +215,12 @@
   "model": "scraping.vacancy",
   "pk": 15,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44404394?query=python",
-    "title": "Full Stack Python Developer",
-    "company": " HIVE",
+    "url": "https://spb.hh.ru/vacancy/44423163?query=python",
+    "title": "Python Developer",
+    "company": "«РОСБАНК, Societe Generale Group», с опытом работы",
     "subway": "",
-    "description": "Мы также занимаемся разработкой внутренних систем и сервисов для IT-бизнеса, и сейчас мы в поисках Full Stack Python-разработчиков...",
-    "timestamp": "2021-05-06",
+    "description": "Опыт программирования на <highlighttext>Python</highlighttext> (Django/Tornado) от 1-2 лет. Желателен опыт работы с СУБД MySQL, MSSQL, PostgreSQL. ",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -229,12 +229,12 @@
   "model": "scraping.vacancy",
   "pk": 16,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44270525?query=python",
-    "title": "Программист Python/Django Fullstack",
-    "company": "ООО РестоМаркет",
+    "url": "https://spb.hh.ru/vacancy/43922423?query=python",
+    "title": "Middle Python Engineer (Remote)",
+    "company": "Spark Equation",
     "subway": "",
-    "description": "Сопровождение сайтов на Django. Разработка и оптимизация новых web-проектов. Написание и поддержка документации к нашим продуктам. Написание REST API...",
-    "timestamp": "2021-05-06",
+    "description": "Уверенное знание и опыт разработки решений на основе <highlighttext>Python</highlighttext>. Опыт работы с микросервисной архитектурой. Опыт работы с PostrgreSQL или ее...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -243,12 +243,12 @@
   "model": "scraping.vacancy",
   "pk": 17,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44339101?query=python",
-    "title": "Начинающий backend-разработчик (Python)",
-    "company": " Emphasoft",
+    "url": "https://spb.hh.ru/vacancy/44366671?query=python",
+    "title": "Senior C++/Python Developer",
+    "company": "ООО МПК Софт",
     "subway": "",
-    "description": "Писать новый функционал и рефакторинг существующего. Работать в технически сильной команде. Использовать git, jira, pycharm, phpstorm и другие инструменты.",
-    "timestamp": "2021-05-06",
+    "description": "знание <highlighttext>Python</highlighttext>/Golang (желательно). - компьютерное зрение/работа с видео (обязательно). - опыт разработки с PyTorch/CUDA (желательно). - знание <highlighttext>Python</highlighttext> (обязательно). - ",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -257,12 +257,12 @@
   "model": "scraping.vacancy",
   "pk": 18,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/36715026?query=python",
-    "title": "Senior C++/Python Developer (Yellow Team)",
-    "company": " Semrush",
+    "url": "https://spb.hh.ru/vacancy/44272275?query=python",
+    "title": "Python-разработчик систем сбора",
+    "company": "ООО Селфсек",
     "subway": "",
-    "description": "...системы сбора и обработки данных. Решать проблемы производительности (память, диск, сеть). Решать проблемы масштабируемости. Сервис написан на C++, python, go.",
-    "timestamp": "2021-05-06",
+    "description": "Уверенное знание <highlighttext>Python</highlighttext>3. Опыт разработки систем сбора. Опыт многопоточной и асинхронной разработки (threading, asyncio), знание примитивов синхронизации, умение масштабировать...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -271,12 +271,12 @@
   "model": "scraping.vacancy",
   "pk": 19,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/44143702?query=python",
-    "title": "Backend/Full-stack developer (python)",
-    "company": " ATI.SU",
+    "url": "https://spb.hh.ru/vacancy/43732410?query=python",
+    "title": "Программист Python",
+    "company": "Радиофид",
     "subway": "",
-    "description": "Система электронного документооборота. Сейчас это простой инструмент обмена и подписи документов интегрированный с основной экосистемой, но в скором времени предстоит...",
-    "timestamp": "2021-05-06",
+    "description": "Знание <highlighttext>Python</highlighttext>, SQL. Знание стека сетевых протоколов. Знание принципов тестирования. Техническое образование. Знание систем автоматизации разработки ПО. Знание систем автоматизации...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
@@ -285,98 +285,23 @@
   "model": "scraping.vacancy",
   "pk": 20,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/43394109?query=python",
-    "title": "Senior QA Automation Engineer (Python)",
-    "company": " Scalable Solutions",
+    "url": "https://spb.hh.ru/vacancy/43854771?query=python",
+    "title": "Web-программист (Python, удаленно)",
+    "company": "Welbex",
     "subway": "",
-    "description": "",
-    "timestamp": "2021-05-06",
+    "description": "Главное требование – успешное тестовое задание и прохождение собеседований, остальное условно. Опыт <highlighttext>Python</highlighttext> от 1 года. Опыт работы с Django/Django...",
+    "timestamp": "2021-05-07",
     "city": 1,
     "language": 1
   }
 },
 {
-  "model": "scraping.vacancy",
-  "pk": 21,
+  "model": "scraping.url",
+  "pk": 1,
   "fields": {
-    "url": "https://spb.hh.ru/vacancy/41876803?query=python",
-    "title": "Python developer",
-    "company": " B2Broker Санкт-Петербург",
-    "subway": "",
-    "description": "",
-    "timestamp": "2021-05-06",
     "city": 1,
-    "language": 1
-  }
-},
-{
-  "model": "scraping.vacancy",
-  "pk": 22,
-  "fields": {
-    "url": "https://spb.hh.ru/vacancy/43835088?query=python",
-    "title": "QA Automation Engineer Python( backend)",
-    "company": " KINDDA",
-    "subway": "",
-    "description": "Анализ требований. Настройка тестового окружения. Автоматизация тест-кейсов. Поддержка существующих автоматизированных тестов. Поддержка и развитие фреймворка автоматизации. Интеграция тестов с...",
-    "timestamp": "2021-05-06",
-    "city": 1,
-    "language": 1
-  }
-},
-{
-  "model": "scraping.vacancy",
-  "pk": 23,
-  "fields": {
-    "url": "https://spb.hh.ru/vacancy/43832881?query=python",
-    "title": "Python-разработчик",
-    "company": "ООО Единая Информационная Система ЖКХ",
-    "subway": "",
-    "description": "Рефакторинг существующего кода. Разработка и внедрение новых модулей системы. Ежедневная отчетность в CRM-системе.",
-    "timestamp": "2021-05-06",
-    "city": 1,
-    "language": 1
-  }
-},
-{
-  "model": "scraping.vacancy",
-  "pk": 24,
-  "fields": {
-    "url": "https://spb.hh.ru/vacancy/44272275?query=python",
-    "title": "Python-разработчик систем сбора",
-    "company": "ООО Селфсек",
-    "subway": "",
-    "description": "Написание чистого, понятного кода. Реализация систем сбора. Анализ и исправление ошибок. Сопровождение запуска и эксплуатации сборщиков в продакшене.",
-    "timestamp": "2021-05-06",
-    "city": 1,
-    "language": 1
-  }
-},
-{
-  "model": "scraping.vacancy",
-  "pk": 25,
-  "fields": {
-    "url": "https://spb.hh.ru/vacancy/42631066?query=python",
-    "title": "Web-разработчик (React, Python)",
-    "company": " BeeJee",
-    "subway": "",
-    "description": "",
-    "timestamp": "2021-05-06",
-    "city": 1,
-    "language": 1
-  }
-},
-{
-  "model": "scraping.vacancy",
-  "pk": 26,
-  "fields": {
-    "url": "https://spb.hh.ru/vacancy/43922423?query=python",
-    "title": "Middle Python Engineer (Remote)",
-    "company": " Spark Equation",
-    "subway": "",
-    "description": "Разработка новых проектов, участие в тестировании и развертывании. Работа с существующими проектами. Участие в разработке архитектурных решений. Участие в код...",
-    "timestamp": "2021-05-06",
-    "city": 1,
-    "language": 1
+    "language": 1,
+    "url_data": "{\"head_hunter\": \"https://spb.hh.ru/search/vacancy?st=searchVacancy&text=python&search_field=name&area=2&salary=&currency_code=RUR&experience=doesNotMatter&order_by=relevance&search_period=0&items_on_page=50&no_magic=true&L_save_area=true\"}"
   }
 }
 ]
