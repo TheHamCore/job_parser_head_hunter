@@ -44,7 +44,7 @@ def head_hunter(url, language=None, city=None):
                     jobs.append({
                         'title': title.text,
                         'url': href,
-                        # 'description': description2,
+                        'description': description2,
                         # 'description_responsibility': description_responsibility,
                         # 'description_requirement': description_requirement.text,
                         'company': company.text,
