@@ -5,6 +5,8 @@ from random import randint
 
 __all__ = ('head_hunter',)  # для ипорта всех последующий функций.
 
+
+
 headers = [
     {
         'User-Agent': 'Mozilla/5.0 (Windows NT 5.1; rv:47.0) Gecko/20100101 Firefox/47.0',
@@ -58,6 +60,7 @@ def head_hunter(url, language=None, city=None):
                 'url': url,
                 'title': 'Страница не отвечает'
             })
+
     return jobs, errors
 
 
@@ -68,6 +71,6 @@ def head_hunter(url, language=None, city=None):
 if __name__ == '__main__':
     url = 'https://spb.hh.ru/search/vacancy?area=2&fromSearchLine=true&st=searchVacancy&text=python'
     jobs, errors = head_hunter(url)
-    h = codecs.open('../work.txt', 'w', encoding='utf-8')  # сервер присылает ответ
+    h = codecs.open(u''+'../work.txt', 'w', encoding="utf-8")  # сервер присылает ответ
     h.write(str(jobs))  # записываем байты в строки
     h.close()

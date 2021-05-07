@@ -113,3 +113,4 @@ if errors:  # если ошибки существуют
 h = open('work.txt', 'w', encoding='utf-8')
 h.write(str(jobs))  # получаем контент от сервера. Преобразуя байты в строки
 h.close()
+
