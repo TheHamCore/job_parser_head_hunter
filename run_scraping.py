@@ -111,7 +111,7 @@ if errors:  # если ошибки существуют
     else:
         er = Error(data=f'errors: {errors}').save()  # в модель добавляем значение поля data
 
-h = codecs.open('work_parser1.txt', 'w', 'utf-8')
-h.write(str(jobs))  # получаем контент от сервера. Преобразуя байты в строки
-h.close()
+# h = codecs.open('work_parser1.txt', 'w', encoding='latin-1')
+# h.write(str(jobs))  # получаем контент от сервера. Преобразуя байты в строки
+# h.close()
 

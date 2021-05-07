@@ -43,7 +43,7 @@ def head_hunter(url, language=None, city=None):
                     jobs.append({
                         'title': title.text,
                         'url': href,
-                        'description': description2,
+                        # 'description': description2,
                         # 'description_responsibility': description_responsibility,
                         # 'description_requirement': description_requirement.text,
                         'company': company.text,
@@ -72,6 +72,6 @@ def head_hunter(url, language=None, city=None):
 if __name__ == '__main__':
     url = 'https://spb.hh.ru/search/vacancy?area=2&fromSearchLine=true&st=searchVacancy&text=python'
     jobs, errors = head_hunter(url)
-    h = codecs.open('../work_parser1.txt', 'w', "utf-8")  # сервер присылает ответ
+    h = codecs.open('../work_parser1.txt', 'w', encoding="unicode_escape")  # сервер присылает ответ
     h.write(str(jobs))  # записываем байты в строки
     h.close()
