@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import requests
 import codecs
 from bs4 import BeautifulSoup
@@ -72,6 +73,6 @@ def head_hunter(url, language=None, city=None):
 if __name__ == '__main__':
     url = 'https://spb.hh.ru/search/vacancy?area=2&fromSearchLine=true&st=searchVacancy&text=python'
     jobs, errors = head_hunter(url)
-    h = codecs.open('../work_parser1.txt', 'w', encoding="unicode_escape")  # сервер присылает ответ
+    h = codecs.open('../work_parser1.txt', 'w', encoding='utf-8')  # сервер присылает ответ
     h.write(str(jobs))  # записываем байты в строки
     h.close()

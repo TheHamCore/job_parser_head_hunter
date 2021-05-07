@@ -1,0 +1,307 @@
+[
+{
+  "model": "scraping.city",
+  "pk": 1,
+  "fields": {
+    "name": "\u00D1\u00E0\u00ED\u00EA\u0323-\u00CF\u00E5\u0323\u00E5\u0111\u00E1\u00F3\u0111\u0103",
+    "slug": "sankt-peterburg"
+  }
+},
+{
+  "model": "scraping.language",
+  "pk": 1,
+  "fields": {
+    "name": "Python",
+    "slug": "python"
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 1,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44394986?query=python",
+    "title": "Junior Python \u0111\u00E0\u00E7\u0111\u00E0\u00E1\u00EE\u0323\u00F7\u00E8\u00EA",
+    "company": "\u00CE\u00CE\u00CE\u00A0\u00C2\u00E8\u00F1\u0323\u00E0",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 2,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43221558?query=python",
+    "title": "Python Developer (Neon Team)",
+    "company": "Semrush",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 3,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43850827?query=python",
+    "title": "\u00CF\u0111\u00EE\u0103\u0111\u00E0\u0301\u0301\u00E8\u00F1\u0323 Python",
+    "company": "\u00CE\u00CE\u00CE\u00A0\u0309\u00E5\u00EB\u00E5\u00EF\u00EE\u0111\u0323",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 4,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44099330?query=python",
+    "title": "Senior Python Backend Engineer",
+    "company": "Adjust Inc",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 5,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44010861?query=python",
+    "title": "\u0110\u00E0\u00E7\u0111\u00E0\u00E1\u00EE\u0323\u00F7\u00E8\u00EA Python",
+    "company": "FinSTC Software LLC",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 6,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43838111?query=python",
+    "title": "\u00C2\u00E5\u00E4\u00F3\u00F9\u00E8\u00E9 \u0111\u00E0\u00E7\u0111\u00E0\u00E1\u00EE\u0323\u00F7\u00E8\u00EA Python (Team Lead)",
+    "company": "\u00CE\u00CE\u00CE\u00A0\u0309\u00E5\u00EB\u00E5\u00EF\u00EE\u0111\u0323",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 7,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43932938?query=python",
+    "title": "Python-\u0111\u00E0\u00E7\u0111\u00E0\u00E1\u00EE\u0323\u00F7\u00E8\u00EA",
+    "company": "\u00CD\u00EE\u00E2\u00E0\u00EA\u00E8\u00E4 \u0110\u00D3\u00D1",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 8,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44217193?query=python",
+    "title": "\u0110\u00E0\u00E7\u0111\u00E0\u00E1\u00EE\u0323\u00F7\u00E8\u00EA Python (Flask/Django) \u00F1\u00EE \u00E7\u00ED\u00E0\u00ED\u00E8\u00E5\u0301 \u00F4\u0111\u00EE\u00ED\u0323\u00E0 (Vue)",
+    "company": "\u0102\u0111\u00F3\u00EF\u00EF\u00E0 \u00EA\u00EE\u0301\u00EF\u00E0\u00ED\u00E8\u00E9 \u00ABSWEB GROUP\u00BB",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 9,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44404394?query=python",
+    "title": "Full Stack Python Developer",
+    "company": "HIVE",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 10,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/41876803?query=python",
+    "title": "Python developer",
+    "company": "B2Broker \u00D1\u00E0\u00ED\u00EA\u0323-\u00CF\u00E5\u0323\u00E5\u0111\u00E1\u00F3\u0111\u0103",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 11,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43931534?query=python",
+    "title": "Python/Django Web Developer (Remote)",
+    "company": "Soshace",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 12,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43394109?query=python",
+    "title": "Senior QA Automation Engineer (Python)",
+    "company": "Scalable Solutions",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 13,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44270525?query=python",
+    "title": "\u00CF\u0111\u00EE\u0103\u0111\u00E0\u0301\u0301\u00E8\u00F1\u0323 Python/Django Fullstack",
+    "company": "\u00CE\u00CE\u00CE\u00A0\u0110\u00E5\u00F1\u0323\u00EE\u0300\u00E0\u0111\u00EA\u00E5\u0323",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 14,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43360839?query=python",
+    "title": "Senior Data Engineer (AWS/Python)",
+    "company": "\u00CE\u00CE\u00CE\u00A0\u00CE\u00ED\u0309\u00E0\u0111\u0103\u00E5\u0323 \u00CB\u00C0\u00C1\u00D1",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 15,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43922423?query=python",
+    "title": "Middle Python Engineer (Remote)",
+    "company": "Spark Equation",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 16,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44272275?query=python",
+    "title": "Python-\u0111\u00E0\u00E7\u0111\u00E0\u00E1\u00EE\u0323\u00F7\u00E8\u00EA \u00F1\u00E8\u00F1\u0323\u00E5\u0301 \u00F1\u00E1\u00EE\u0111\u00E0",
+    "company": "\u00CE\u00CE\u00CE\u00A0\u00D1\u00E5\u00EB\u00F4\u00F1\u00E5\u00EA",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 17,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44366671?query=python",
+    "title": "Senior C++/Python Developer",
+    "company": "\u00CE\u00CE\u00CE\u00A0\u0300\u00CF\u00CA \u00D1\u00EE\u00F4\u0323",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 18,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44423163?query=python",
+    "title": "Python Developer",
+    "company": "\u00AB\u0110\u00CE\u00D1\u00C1\u00C0\u00CD\u00CA, Societe Generale Group\u00BB, \u00F1 \u00EE\u00EF\u00FB\u0323\u00EE\u0301 \u0111\u00E0\u00E1\u00EE\u0323\u00FB",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 19,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43732410?query=python",
+    "title": "\u00CF\u0111\u00EE\u0103\u0111\u00E0\u0301\u0301\u00E8\u00F1\u0323 Python",
+    "company": "\u0110\u00E0\u00E4\u00E8\u00EE\u00F4\u00E8\u00E4",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 20,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43854771?query=python",
+    "title": "Web-\u00EF\u0111\u00EE\u0103\u0111\u00E0\u0301\u0301\u00E8\u00F1\u0323 (Python, \u00F3\u00E4\u00E0\u00EB\u00E5\u00ED\u00ED\u00EE)",
+    "company": "Welbex",
+    "subway": "",
+    "description": "",
+    "timestamp": "2021-05-07",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.url",
+  "pk": 1,
+  "fields": {
+    "city": 1,
+    "language": 1,
+    "url_data": "{\"head_hunter\": \"https://spb.hh.ru/search/vacancy?clusters=true&area=2&no_magic=true&search_field=name&enable_snippets=true&salary=&st=searchVacancy&text=python\"}"
+  }
+}
+]
