@@ -1,4 +1,5 @@
 import asyncio
+import codecs
 import os
 import sys
 import time
@@ -110,7 +111,7 @@ if errors:  # если ошибки существуют
     else:
         er = Error(data=f'errors: {errors}').save()  # в модель добавляем значение поля data
 
-h = open('work.txt', 'w', encoding='utf-8')
+h = codecs.open('work_parser1.txt', 'w', encoding='utf-8')
 h.write(str(jobs))  # получаем контент от сервера. Преобразуя байты в строки
 h.close()
 

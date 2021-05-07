@@ -51,8 +51,7 @@ class Vacancy(models.Model):
     title = models.CharField(max_length=250, verbose_name='Заголовок вакансии')
     company = models.CharField(max_length=250, verbose_name='Компания')
     subway = models.CharField(max_length=250, verbose_name='Метро')
-    description_responsibility = models.TextField(verbose_name='Описание обязанностей вакансии')
-    description_requirement = models.TextField(verbose_name='Описание требований вакансии')
+    description = models.TextField(verbose_name='Описание обязанностей вакансии')
     timestamp = models.DateField(auto_now_add=True)  # день, когда внесена вакансия
     city = models.ForeignKey('City', on_delete=models.CASCADE, verbose_name='Город')  # много вакансий к 1 городу
     language = models.ForeignKey('Language', on_delete=models.CASCADE,

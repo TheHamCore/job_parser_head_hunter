@@ -27,6 +27,7 @@ def head_hunter(url, language=None, city=None):
         resp = requests.get(url, headers=headers[randint(0, 2)])
         if resp.status_code == 200:
             soup = BeautifulSoup(resp.content, 'html.parser')
+
             main_div = soup.find('div', attrs={'class':'vacancy-serp'})
             if main_div:
                 div_list = main_div.find_all('div', attrs={'class':'vacancy-serp-item'})
@@ -34,17 +35,17 @@ def head_hunter(url, language=None, city=None):
                 for div in div_list:
                     title = div.find('span', attrs={'class':'g-user-content'})
                     href = title.a['href']  # используем точечную нотацию
-                    description_responsibility = div.find('div',
-                                                          attrs={'data-qa': 'vacancy-serp__vacancy_snippet_responsibility'})
-                    description_requirement = div.find('div',
-                                                       attrs={'data-qa': 'vacancy-serp__vacancy_snippet_requirement'})
-                    company = div.find('a', attrs={'class':'bloko-link bloko-link_secondary'})
+                    description = div.find('div', attrs={'class': 'g-user-content'})
+                    description1 = description.find('div', attrs={'data-qa': 'vacancy-serp__vacancy_snippet_requirement'})
+                    description2 = description1.text
+                    company = div.find('a', attrs={'class': 'bloko-link bloko-link_secondary'})
                     # subway = div.find('span', attrs={'class':'metro-point'})
                     jobs.append({
                         'title': title.text,
                         'url': href,
-                        'description_responsibility': description_responsibility.text,
-                        'description_requirement': description_requirement.text,
+                        'description': description2,
+                        # 'description_responsibility': description_responsibility,
+                        # 'description_requirement': description_requirement.text,
                         'company': company.text,
                         # 'subway': subway,
                         'city_id': city,
@@ -71,6 +72,6 @@ def head_hunter(url, language=None, city=None):
 if __name__ == '__main__':
     url = 'https://spb.hh.ru/search/vacancy?area=2&fromSearchLine=true&st=searchVacancy&text=python'
     jobs, errors = head_hunter(url)
-    h = codecs.open(u''+'../work.txt', 'w', encoding="utf-8")  # сервер присылает ответ
+    h = codecs.open(u''+'../work_parser1.txt', 'w', encoding="utf-8")  # сервер присылает ответ
     h.write(str(jobs))  # записываем байты в строки
     h.close()
