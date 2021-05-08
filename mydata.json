@@ -1,0 +1,267 @@
+[
+{
+  "model": "scraping.city",
+  "pk": 1,
+  "fields": {
+    "name": "\u0421\u0430\u043D\u043A\u0442-\u041F\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433",
+    "slug": "sankt-peterburg"
+  }
+},
+{
+  "model": "scraping.language",
+  "pk": 1,
+  "fields": {
+    "name": "Python",
+    "slug": "python"
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 1,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/40229865?query=python+junior",
+    "title": "\u041C\u043B\u0430\u0434\u0448\u0438\u0439 \u0430\u043D\u0430\u043B\u0438\u0442\u0438\u043A \u0434\u0430\u043D\u043D\u044B\u0445 (Junior data analyst)",
+    "company": "\u041E\u041E\u041E\u00A0\u0424\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u043E-\u043F\u0440\u0430\u0432\u043E\u0432\u043E\u0439 \u0430\u043B\u044C\u044F\u043D\u0441",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 2,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44395410?query=python+junior",
+    "title": "Junior Data Engineer",
+    "company": "Cindicator",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 3,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43377571?query=python+junior",
+    "title": "Junior Quantitative Researcher",
+    "company": "Alber Blanc",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 4,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44394986?query=python+junior",
+    "title": "Junior Python \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A",
+    "company": "\u041E\u041E\u041E\u00A0\u0412\u0438\u0441\u0442\u0430",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 5,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43377398?query=python+junior",
+    "title": "\u041C\u043B\u0430\u0434\u0448\u0438\u0439 \u0442\u0440\u0435\u0439\u0434\u0435\u0440 (Junior Quantitative Trader)",
+    "company": "Alber Blanc",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 6,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43900397?query=python+junior",
+    "title": "Junior Software Developer - Big Data",
+    "company": "Inca Digital",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 7,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43267267?query=python+junior",
+    "title": "Junior Big Data Software Engineer (Python)",
+    "company": "DataArt",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 8,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44158221?query=python+junior",
+    "title": "Junior Data Analyst / Scientist (\u041D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0446\u0435\u043B\u0435\u0432\u043E\u0433\u043E \u043C\u0430\u0440\u043A\u0435\u0442\u0438\u043D\u0433\u0430 \u0438 \u0441\u0435\u0433\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u0438)",
+    "company": "\u041B\u0435\u043D\u0442\u0430, \u0444\u0435\u0434\u0435\u0440\u0430\u043B\u044C\u043D\u0430\u044F \u0440\u043E\u0437\u043D\u0438\u0447\u043D\u0430\u044F \u0441\u0435\u0442\u044C, \u041E\u0444\u0438\u0441",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 9,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43661689?query=python+junior",
+    "title": "Full-stack \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A Junior/Middle",
+    "company": "\u041A\u0415\u0419\u0421 \u041F\u041B\u042D\u0419\u0421",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 10,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44049299?query=python+junior",
+    "title": "\u0418\u043D\u0436\u0435\u043D\u0435\u0440 \u0438\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B / Infrastructure Engineer (Junior/Junior+ DevOps)",
+    "company": "Digital Security",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 11,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44110897?query=python+junior",
+    "title": "Junior Scala \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A",
+    "company": "NAUMEN",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 12,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/42749241?query=python+junior",
+    "title": "\u041C\u043B\u0430\u0434\u0448\u0438\u0439 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0441\u0442 perl",
+    "company": "Internest",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 13,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/40538840?query=python+junior",
+    "title": "Backend \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A python",
+    "company": "\u041A\u041E\u041C\u041F\u041B\u0418\u0422",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 14,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43849561?query=python+junior",
+    "title": "Junior SDET/Python developer/QA automation engineer",
+    "company": "Nexign (\u0410\u041E \u00AB\u041D\u044D\u043A\u0441\u0430\u0439\u043D\u00BB)",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 15,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43755754?query=python+junior",
+    "title": "Junior devops / \u041C\u043B\u0430\u0434\u0448\u0438\u0439 \u0434\u0435\u0432\u043E\u043F\u0441 \u0438\u043D\u0436\u0435\u043D\u0435\u0440",
+    "company": "\u041A\u0440\u0430\u0443\u0434",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 16,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43161399?query=python+junior",
+    "title": "Analyst (Junior / Middle), Riga",
+    "company": "Betby",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 17,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43978558?query=python+junior",
+    "title": "Junior \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A (Java/python) \u0430\u043D\u0430\u043B\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0430",
+    "company": "\u0421\u0431\u0435\u0440 \u0434\u043B\u044F \u044D\u043A\u0441\u043F\u0435\u0440\u0442\u043E\u0432",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 18,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44004005?query=python+junior",
+    "title": "NLP Data Scientist (junior|middle|senior)",
+    "company": "\u0421\u0431\u0435\u0440 \u0434\u043B\u044F \u044D\u043A\u0441\u043F\u0435\u0440\u0442\u043E\u0432",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 19,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/43924688?query=python+junior",
+    "title": "Junior DevOps Engineer",
+    "company": "\u041E\u041E\u041E\u00A0\u041C\u0415\u0414\u0418\u041D\u0414\u0415\u041A\u0421",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 20,
+  "fields": {
+    "url": "https://spb.hh.ru/vacancy/44040493?query=python+junior",
+    "title": "\u041C\u043B\u0430\u0434\u0448\u0438\u0439 \u0438\u043D\u0436\u0435\u043D\u0435\u0440 \u043F\u043E \u0442\u0435\u0441\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044E/Junior Software Development Engineer in Test (C/C++/Golang)",
+    "company": "\u041E\u041E\u041E\u00A0\u041A\u041D\u0421 \u0413\u0420\u0423\u041F\u041F",
+    "timestamp": "2021-05-08",
+    "city": 1,
+    "language": 1
+  }
+},
+{
+  "model": "scraping.url",
+  "pk": 1,
+  "fields": {
+    "city": 1,
+    "language": 1,
+    "url_data": "{\"head_hunter\": \"https://hh.ru/search/vacancy?clusters=true&area=2&enable_snippets=true&salary=&st=searchVacancy&text=python+junior\"}"
+  }
+}
+]
