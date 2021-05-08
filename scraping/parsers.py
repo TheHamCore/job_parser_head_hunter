@@ -36,15 +36,15 @@ def head_hunter(url, language=None, city=None):
                 for div in div_list:
                     title = div.find('span', attrs={'class':'g-user-content'})
                     href = title.a['href']  # используем точечную нотацию
-                    description = div.find('div', attrs={'class': 'g-user-content'})
-                    description1 = description.find('div', attrs={'data-qa': 'vacancy-serp__vacancy_snippet_requirement'})
-                    description2 = description1.text
+                    # description = div.find('div', attrs={'class': 'g-user-content'})
+                    # description1 = description.find('div', attrs={'data-qa': 'vacancy-serp__vacancy_snippet_requirement'})
+                    # description2 = description1.text
                     company = div.find('a', attrs={'class': 'bloko-link bloko-link_secondary'})
                     # subway = div.find('span', attrs={'class':'metro-point'})
                     jobs.append({
                         'title': title.text,
                         'url': href,
-                        'description': description2,
+                        # 'description': description2,
                         # 'description_responsibility': description_responsibility,
                         # 'description_requirement': description_requirement.text,
                         'company': company.text,
