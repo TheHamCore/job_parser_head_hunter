@@ -8,7 +8,7 @@
 *.pyc
 __pycache__/
 local_settings.py
-../DJANGO_WORK_PROJECT/src/db.sqlite3
+db.sqlite3
 db.sqlite3-journal
 media
 
@@ -45,6 +45,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+venv
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -71,7 +72,7 @@ coverage.xml
 
 # Translations
 *.mo
-
+#
 # Scrapy stuff:
 .scrapy
 
@@ -125,6 +126,7 @@ dmypy.json
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
+.idea
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -256,3 +258,6 @@ fabric.properties
 # Pyre type checker
 
 # End of https://www.gitignore.io/api/pycharm,python,django
+/Lib/
+/.gitignore
+/pyvenv.cfg

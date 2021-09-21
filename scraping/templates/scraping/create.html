@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Job Finder {% endblock %}
+
+{% block content %}
+
+    <div class="card my-3">
+        <h5 class="card-header">
+            <a href="{{ object_v.url }}">
+            {{ object_v.title }}
+            </a></h5>
+        <div class="card-body">
+            <form action="" method="POST"> {% crsf_token %}
+                {{form.as_p}}
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+
+{% endblock %}

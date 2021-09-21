@@ -16,12 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
-from scraping.views import home_view, list_view
+from scraping.views import home_view, VDetail, list_view, VCreate
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
-    path('list', list_view, name='list'),
-    path('accounts/', include(('accounts.urls', 'accounts')))
+    path('list/', list_view, name='list'),  # на основе функции
+    # path('list/', VList.as_view(), name='list'),  # на основе класса
+    path('accounts/', include(('accounts.urls', 'accounts'))),
+    path('detail/<int:pk>/', VDetail.as_view(), name='detail'),  # на основе класса
+    # path('detail/<int:pk>/', v_detail, name='detail'), # на основе функции
+    path('create/', VCreate.as_view(), name='create'),  # на основе класса
+
 ]
