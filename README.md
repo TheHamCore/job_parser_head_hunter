@@ -1,4 +1,8 @@
-# Installation
+# Parser Head_hunter
+### Description
+####Service for an employee looking for a job, which allows you to receive vacancies from the head_hunter website
+
+### Installation
 
 #### Install the dependencies and start the server.
 ```
