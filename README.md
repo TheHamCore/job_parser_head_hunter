@@ -1,6 +1,6 @@
 # Parser Head_hunter
 ### Description
-####Service for an employee looking for a job, which allows you to receive vacancies from the head_hunter website
+#### Service for an employee looking for a job, which allows you to receive vacancies from the head_hunter website
 
 ### Installation
 
